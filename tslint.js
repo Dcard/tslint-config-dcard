@@ -1,3 +1,5 @@
+var path = require('path');
+
 module.exports = {
   extends: [
     'tslint:recommended',
@@ -6,7 +8,7 @@ module.exports = {
     'tslint-consistent-codestyle'
   ],
   rulesDirectory: [
-    'node_modules/tslint-microsoft-contrib'
+    path.dirname(require.resolve('tslint-microsoft-contrib'))
   ],
   rules: {
     'quotemark': [true, 'single', 'avoid-escape', 'jsx-single'],
