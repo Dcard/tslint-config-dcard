@@ -1,0 +1,21 @@
+{
+  "name": "tslint-config-dcard",
+  "version": "1.0.0",
+  "description": "TSLint config for Dcard projects",
+  "main": "tslint.js",
+  "repository": "Dcard/tslint-config-dcard",
+  "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
+  "license": "MIT",
+  "keywords": [
+    "dcard",
+    "tslint-config"
+  ],
+  "peerDependencies": {
+    "tslint": ">= 5"
+  },
+  "dependencies": {
+    "tslint-consistent-codestyle": "^1.9.3",
+    "tslint-eslint-rules": "^4.1.1",
+    "tslint-react": "^3.2.0"
+  }
+}
