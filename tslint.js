@@ -6,10 +6,12 @@ module.exports = {
     'tslint-eslint-rules',
     'tslint-react',
     'tslint-consistent-codestyle',
-    'rxjs-tslint-rules'
+    'rxjs-tslint-rules',
+    'tslint-config-prettier'
   ],
   rulesDirectory: [
-    path.dirname(require.resolve('tslint-microsoft-contrib'))
+    path.dirname(require.resolve('tslint-microsoft-contrib')),
+    path.dirname(require.resolve('tslint-plugin-prettier'))
   ],
   rules: {
     'quotemark': [true, 'single', 'avoid-escape', 'jsx-single'],
@@ -125,6 +127,16 @@ module.exports = {
     'rxjs-no-operator': true,
     'rxjs-no-add': true,
     'rxjs-no-patched': true,
-    'rxjs-no-wholesale': true
+    'rxjs-no-wholesale': true,
+    'prettier': [true, {
+      'tabWidth': 2,
+      'useTabs': false,
+      'semi': true,
+      'singleQuote': true,
+      'trailingComma': 'none',
+      'bracketSpacing': true,
+      'jsxBracketSameLine': true,
+      'arrowParens': 'avoid'
+    }]
   }
 };
