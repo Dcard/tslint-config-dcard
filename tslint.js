@@ -5,7 +5,8 @@ module.exports = {
     'tslint:recommended',
     'tslint-eslint-rules',
     'tslint-react',
-    'tslint-consistent-codestyle'
+    'tslint-consistent-codestyle',
+    'rxjs-tslint-rules'
   ],
   rulesDirectory: [
     path.dirname(require.resolve('tslint-microsoft-contrib'))
@@ -46,16 +47,15 @@ module.exports = {
     'no-exec-script': true,
     'no-for-in': true,
     'no-function-constructor-with-string-args': true,
-    'no-increment-decrement': true,
     'no-inner-html': true,
     'no-invalid-regexp': true,
     'no-regex-spaces': true,
     'no-reserved-keywords': true,
-    'no-stateless-class': true,
     'no-string-based-set-immediate': true,
     'no-string-based-set-interval': true,
     'no-string-based-set-timeout': true,
     'no-unnecessary-bind': true,
+    'no-unnecessary-class': true,
     'no-unnecessary-field-initialization': true,
     'no-unnecessary-local-variable': true,
     'no-unnecessary-override': true,
@@ -65,22 +65,54 @@ module.exports = {
     'possible-timing-attack': true,
     'prefer-array-literal': true,
     'promise-must-complete': true,
-    'react-a11y-anchors': true,
-    'react-a11y-aria-unsupported-elements': true,
-    'react-a11y-event-has-role': true,
-    'react-a11y-image-button-has-alt': true,
-    'react-a11y-img-has-alt': true,
-    'react-a11y-lang': true,
-    'react-a11y-meta': true,
-    'react-a11y-props': true,
-    'react-a11y-proptypes': true,
-    'react-a11y-role-has-required-aria-props': true,
-    'react-a11y-role-supports-aria-props': true,
-    'react-a11y-role': true,
-    'react-a11y-tabindex-no-positive': true,
-    'react-a11y-titles': true,
-    'react-anchor-blank-noopener': true,
-    'react-iframe-missing-sandbox': true,
+    'react-a11y-anchors': {
+      severity: 'warning'
+    },
+    'react-a11y-aria-unsupported-elements': {
+      severity: 'warning'
+    },
+    'react-a11y-event-has-role': {
+      severity: 'warning'
+    },
+    'react-a11y-image-button-has-alt': {
+      severity: 'warning'
+    },
+    'react-a11y-img-has-alt': {
+      severity: 'warning'
+    },
+    'react-a11y-lang': {
+      severity: 'warning'
+    },
+    'react-a11y-meta': {
+      severity: 'warning'
+    },
+    'react-a11y-props': {
+      severity: 'warning'
+    },
+    'react-a11y-proptypes': {
+      severity: 'warning'
+    },
+    'react-a11y-role-has-required-aria-props': {
+      severity: 'warning'
+    },
+    'react-a11y-role-supports-aria-props': {
+      severity: 'warning'
+    },
+    'react-a11y-role': {
+      severity: 'warning'
+    },
+    'react-a11y-tabindex-no-positive': {
+      severity: 'warning'
+    },
+    'react-a11y-titles': {
+      severity: 'warning'
+    },
+    'react-anchor-blank-noopener': {
+      severity: 'warning'
+    },
+    'react-iframe-missing-sandbox': {
+      severity: 'warning'
+    },
     'react-no-dangerous-html': true,
     'react-this-binding-issue': true,
     'react-unused-props-and-state': true,
@@ -88,6 +120,11 @@ module.exports = {
     'use-named-parameter': true,
     'valid-typeof': true,
     'no-bitwise': false,
-    'no-shadowed-variable': false
+    'no-shadowed-variable': false,
+    'rxjs-no-do': true,
+    'rxjs-no-operator': true,
+    'rxjs-no-add': true,
+    'rxjs-no-patched': true,
+    'rxjs-no-wholesale': true
   }
 };

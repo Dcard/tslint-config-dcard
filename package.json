@@ -14,9 +14,10 @@
     "tslint": ">= 5"
   },
   "dependencies": {
-    "tslint-consistent-codestyle": "^1.9.3",
+    "rxjs-tslint-rules": "^3.7.2",
+    "tslint-consistent-codestyle": "^1.11.0",
     "tslint-eslint-rules": "^4.1.1",
-    "tslint-microsoft-contrib": "^5.0.1",
-    "tslint-react": "^3.2.0"
+    "tslint-microsoft-contrib": "^5.0.2",
+    "tslint-react": "^3.4.0"
   }
 }
