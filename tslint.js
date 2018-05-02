@@ -5,11 +5,11 @@ module.exports = {
     'tslint:recommended',
     'tslint-eslint-rules',
     'tslint-react',
-    'tslint-consistent-codestyle',
-    'rxjs-tslint-rules'
+    'tslint-consistent-codestyle'
   ],
   rulesDirectory: [
-    path.dirname(require.resolve('tslint-microsoft-contrib'))
+    path.dirname(require.resolve('tslint-microsoft-contrib')),
+    path.dirname(require.resolve('rxjs-tslint'))
   ],
   rules: {
     'quotemark': [true, 'single', 'avoid-escape', 'jsx-single'],
@@ -121,10 +121,9 @@ module.exports = {
     'valid-typeof': true,
     'no-bitwise': false,
     'no-shadowed-variable': false,
-    'rxjs-no-do': true,
-    'rxjs-no-operator': true,
-    'rxjs-no-add': true,
-    'rxjs-no-patched': true,
-    'rxjs-no-wholesale': true
+    'rxjs-collapse-imports': true,
+    'rxjs-pipeable-operators-only': true,
+    'rxjs-no-static-observable-methods': true,
+    'rxjs-proper-imports': true
   }
 };
