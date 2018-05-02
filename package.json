@@ -1,6 +1,6 @@
 {
   "name": "tslint-config-dcard",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "TSLint config for Dcard projects",
   "main": "tslint.js",
   "repository": "Dcard/tslint-config-dcard",
