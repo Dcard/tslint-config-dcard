@@ -65,6 +65,7 @@ module.exports = {
     'possible-timing-attack': true,
     'prefer-array-literal': true,
     'promise-must-complete': true,
+    'curly': [true, 'ignore-same-line'],
     'react-a11y-anchors': {
       severity: 'warning'
     },
